@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div.upper-bar{
+    background-color:grey;
+    height:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+body{font-family: 'Cairo', sans-serif;background-color: whitesmoke}
+
+.container{ padding:60px 40px;}
+
+h1{font-size:2.2rem; color:rgb(85, 85, 85)}
+
+table{border-collapse: collapse;}
+
+table, th, td{border:1px solid rgb(108, 108, 108)}
+
+th, td{padding:10px 7px;font-size:1.4rem}
+
+
+th{background-color:#66BFBF;color:white;}
+
+
+input{padding:10px 5px;font-size:1rem}
+
+input:hover{border:1px solid red}
+
+td.total{   
+    font-size:1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color:rgb(236, 236, 236);
+}
+
+.total-salary{
+    background-color:#FF0063;
+    border:none;
+    padding:20px 10px;
+    color:white;
+}
+
+ul{list-style: none;}
+
+li.question{margin:25px 0}
+
+h3{
+    background-color:rgb(221, 221, 221);
+    padding:8px;
+    cursor: pointer;
+}
+
+h3:hover{
+    background-color:rgb(206, 206, 206);
+}
+
+li div{padding:10px;}
+
+.hide{display: none;}

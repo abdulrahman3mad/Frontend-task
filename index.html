@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style/style.css">
+        <title>Frontend 1st Task</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="upper-bar"></div>
+            <form action="" name="">
+                <table>
+                    <thead>
+                        <th>Name</th>
+                        <th colspan="2">Age</th>
+                        <th>Job</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Salary</th>
+                    </thead>
+                    <tbody id="container"></tbody>
+                    <tfoot></tfoot>
+                </table>
+            </form>
+        </div>
+        <div class="container">
+            <header><h1>Additional Task</h1></header>
+            <div>
+                <ul>
+                    <li class="question">
+                        <h3 id="question">What is the difference between Button and Input as submit elements?</h3>
+                        <div class="hide">
+                            <p>
+                               There are 3 types of button types: 
+                                Submit: submits the current form (the default value) <br>
+                                Reset: Clear the current form data <br>
+                                Button: Just a button. Its effect must be defined by javascript <br>
+
+                                The difference is that 
+                                <ol>
+                                    <li>button type submit is a nested tag, so it can have pictures, text, etc.. but in case of input type submit we can add content by value attribute 
+                                        but we can't add text</li>
+                                    <li>we can change the style of button content and the style of them, but we can't with input tag</li>
+                                </ol>
+                                
+                                <form action="https://www.google.com">
+                                <br>
+                                Input: <input type="submit" value="Login">
+                                <br>
+                                Button" <button type="submit">
+                                            <img src="imgs/img.jpg" alt="" width="100px">
+                                        </button>
+                                </form>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">What defines the taken height for the element background?</h3>
+                        <div class="hide">
+                            <p>
+                                There are two type of HTML elements display values and each element has a default display value : 
+                                <ol>
+                                    <li>Block Element: like div, h1, p, etc..</li>
+                                    <li>Inline Element: like a, span, etc..</li>
+                                </ol>
+                                the block element takes the full page width available and starts on a new line, and has margin before and after it <br>
+                                the inline element takes up as much width as necessary and doesn't start on a new line
+                                <br>
+                                <b>Block: </b><p style="background-color:rgb(179, 179, 179)"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
+                                <br>
+                                <p><b>Inline: </b> <span style="background-color:rgb(179, 179, 179)">Lorem ipsum dolor sit amet.</span></p>
+
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">How to define the max and min number of digits of tel input</h3>
+                        <div class="hide">
+                            <p>
+                                Using minlength, and maxlength attributes :)
+                                <input type="tel" name="" id="" maxlength="11" minlength="10">
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">Is there a name for the form tag? and what its purpose?</h3>
+                        <div class="hide">
+                            <p>
+                             Yes just like input tag. to be able to reference it in the backend when its submitted, so we can then do a specific job when
+                             this specific form is submitted using its name value 
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">What is the purpose of "for" attribute of label tag?</h3>
+                        <div class="hide">
+                            <p>
+                                by giving the <b>Label tag for attribute</b> a value = the id of some input/checkbox/radio.. 
+                                then if you click on the label it's just like you click on the input
+                                it's usful especially with checkbox, radio elements, so instead of clicking on the small boxes you click on the text space
+                                <br>
+
+                                <label for="html">html</label>
+                                <input type="radio" name="lang" id="html" value="html">
+                                <label for="css">css</label>
+                                <input type="radio" name="lang" id="css" value="css">
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">How to make lists inside "select" displayed elements?</h3>
+                        <div class="hide">
+                            <p>
+                                using <b>optgroup tag</b>
+                                <br>
+                                <select name="lang" id="lang">
+                                    <optgroup label="web">
+                                        <option value="html">HTML</option>
+                                        <option value="css" selected>CSS</option>
+                                    </optgroup>
+                                    <optgroup label="desktop">
+                                        <option value="cpp">c++</option>
+                                        <option value="java">java</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">How to change the default initial value for select?</h3>
+                        <div class="hide">
+                            <p>
+                                By using boolean Selected attribute 
+                                <select name="" id="">
+                                    <option value="html">HTML</option>
+                                    <option value="css" selected>CSS</option>
+                                </select>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="question">
+                        <h3 id="question">How to select only one value for radio? and what is the form of sent data to the backend with radio or select?</h3>
+                        <div class="hide">
+                            <p>
+                                By giving the radio buttons the same name, then the sent value will have the form
+                                (<b>name=value</b>) in which the value is equal to the value of the selected radio 
+                                <form action="#">
+                                    <label>Gender</label>
+                                    <br>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="male">
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="female">
+                                    <input type="submit" value="Submit">
+                                </form>
+                                so if we select male then the sent data form will be (gender=male)
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
