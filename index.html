@@ -17,7 +17,13 @@
                         <th>Salary</th>
                     </thead>
                     <tbody id="container"></tbody>
-                    <tfoot></tfoot>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">
+                                <button type="submit" class="table-button">Submit</button>
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
             </form>
         </div>
@@ -142,14 +148,13 @@
                             <p>
                                 By giving the radio buttons the same name, then the sent value will have the form
                                 (<b>name=value</b>) in which the value is equal to the value of the selected radio 
+                                <br>
                                 <form action="#">
-                                    <label>Gender</label>
-                                    <br>
                                     <label for="male">Male</label>
                                     <input type="radio" name="gender" id="male" value="male">
                                     <label for="female">Female</label>
                                     <input type="radio" name="gender" id="female" value="female">
-                                    <input type="submit" value="Submit">
+                                    <button type="submit">submit</button>
                                 </form>
                                 so if we select male then the sent data form will be (gender=male)
                             </p>
