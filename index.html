@@ -62,12 +62,13 @@
                         <h3 id="question">What defines the taken height for the element background?</h3>
                         <div class="hide">
                             <p>
-                                There are two type of HTML elements display values and each element has a default display value : 
+                                There are two types of HTML elements display values and each element has a default display value : 
                                 <ol>
                                     <li>Block Element: like div, h1, p, etc..</li>
                                     <li>Inline Element: like a, span, etc..</li>
                                 </ol>
                                 the block element takes the full page width available and starts on a new line, and has margin before and after it <br>
+                                so the <b>P</b> takes this width because it's a block element, but takes the necessary height like the inline element <br>
                                 the inline element takes up as much width as necessary and doesn't start on a new line
                                 <br>
                                 <b>Block: </b><p style="background-color:rgb(179, 179, 179)"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, qui!</p>
@@ -112,7 +113,7 @@
                         </div>
                     </li>
                     <li class="question">
-                        <h3 id="question">How to make lists inside "select" displayed elements?</h3>
+                        <h3 id="question">How to make lists (categories) inside "select" displayed elements?</h3>
                         <div class="hide">
                             <p>
                                 using <b>optgroup tag</b>
@@ -157,6 +158,23 @@
                                     <button type="submit">submit</button>
                                 </form>
                                 so if we select male then the sent data form will be (gender=male)
+                            </p>
+                        </div>
+                    </li>
+                     <li class="question">
+                        <h3 id="question">what is the form of sent data to the backend with checkbox?</h3>
+                        <div class="hide">
+                            <p>
+                                for each box you select, a (name=value) of this box is sent to the server in which each one has a different name 
+                                <br>
+                                <form action="#">
+                                    <label for="html">html</label>
+                                    <input type="checkbox" name="lang1" id="html" value="html">
+                                    <label for="css">css</label>
+                                    <input type="checkbox" name="lang2" id="css" value="css">
+                                    <button type="submit">submit</button>
+                                </form>
+                                so if we select html & css boxes then the sent data form will be (lang1=html & lang2=css)
                             </p>
                         </div>
                     </li>

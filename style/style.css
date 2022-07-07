@@ -28,7 +28,11 @@ table, th, td{border:1px solid rgb(108, 108, 108)}
 th, td{padding:10px 7px;font-size:1.4rem}
 
 
-th{background-color:#66BFBF;color:white;}
+th{background-color:rgb(176, 176, 176);color:white;}
+
+th:hover{
+    background-color:rgb(161, 161, 161)
+}
 
 
 input{padding:10px 5px;font-size:1rem}
@@ -36,7 +40,7 @@ input{padding:10px 5px;font-size:1rem}
 input:hover{border:1px solid red}
 
 td.total{   
-    font-size:1.5rem;
+    font-size:1.8rem;
     font-weight: bold;
     text-align: center;
     background-color:rgb(236, 236, 236);
@@ -68,7 +72,7 @@ li div{padding:10px;}
 .hide{display: none;}
 
 button{
-    background-color:#66BFBF;
+    background-color:#a1a1a1;
     padding:5px;
     border:none;
     font-size:1rem;
